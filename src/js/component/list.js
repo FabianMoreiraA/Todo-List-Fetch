@@ -27,9 +27,12 @@ export const TodoList = props => {
 	};
 
 	useEffect(() => {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/amadriz", {
-			method: "GET"
-		})
+		fetch(
+			"https://assets.breatheco.de/apis/fake/todos/user/fabianmoreira",
+			{
+				method: "GET"
+			}
+		)
 			.then(resp => {
 				if (!resp.ok) {
 					throw Error(resp.statusText);
@@ -48,13 +51,16 @@ export const TodoList = props => {
 	}, []);
 
 	useEffect(() => {
-		fetch("https://assets.breatheco.de/apis/fake/todos/user/amadriz", {
-			method: "PUT",
-			body: JSON.stringify(tasks),
-			headers: {
-				"Content-Type": "application/json"
+		fetch(
+			"https://assets.breatheco.de/apis/fake/todos/user/fabianmoreira",
+			{
+				method: "PUT",
+				body: JSON.stringify(tasks),
+				headers: {
+					"Content-Type": "application/json"
+				}
 			}
-		})
+		)
 			.then(resp => {
 				if (!resp.ok) {
 					throw Error(resp.statusText);

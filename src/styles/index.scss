@@ -1,22 +1,25 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+body{
+    background-color: #666677;
+}
 
 .container{
     margin-top: 80px;
-	width:360px;
+	width:700px;
 	// margin: 100px auto;
 }   
 
 h1{
 	background: #29a8b9;
-	color: #ffffff;
+	color: #666677;
 	margin: 0;
 	font-weight: bold;
     border-radius: 5px 5px 0 0; 
 }
 .footer{
     background: #29a8b9;
-	color: #ffffff;
+	color: #666677;
 	margin: 0;
 	font-weight: bold;
     border-radius: 0 0 5px 5px;
@@ -31,7 +34,7 @@ ul{
 }
 
 li{
-	background: #ffffff;
+	background: #666677;
 	height: 40px;
 	line-height: 40px;
 	color: #666;
